@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">   
+     <title>Prasad-Blog1</title>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">prasadvinnakota</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <header class="hero">
+        <h1 class="hero-heading">Lets Learn<span class="heading-inverted"> MAP, FILTER, REDUCE</span></h1>
+        <img class="hero-img" src="/images/blog1.png"/>
+    </header>
+
+    <article class="container-center showcase-blog">
+        
+        <h2>Map</h2>
+        <p>Map takes the each element of the array and applies the condition to every element inside it. It returns an array of elements on applying the condition.
+            <br/>
+            <br/>
+        <i>const arr1=[1,2,3]
+
+            <br/>
+            <br/>
+
+            arr1.map((index,num)=>console.log(num*index)) //This will console all numbers in it by multiplying with index. Here index is optional.
+            
+            <br/>
+            <br/>
+            // o/p: 0 2 6</i>    
+        </p>
+        <h2>Filter</h2>
+        <p>Filter takes an array of elements and filters the array based on the condition. It return a new array with filtered elements(where our condition is true).
+            <br/>
+            <br/>
+        <i>const arr1=[1,2,3]
+
+            <br/>
+            <br/>
+
+            const arr2 = arr1.filter((index,num)=>num%index===0) //This will give a array where the numbers are divided by index. Here index is optional.
+            
+            <br/>
+            <br/>
+            // o/p: [1,2]</i>      
+        </p>
+        <h2>Reduce</h2>
+        <p>Reduce takes an array and gives out single value. It goes through each and every element of array and gives the output based on the condition we give.
+            <br/>
+            <br/>
+        <i>const arr1=[1,2,3]
+
+            <br/>
+            <br/>
+            const sum= arr1.reduce((total,current)=>total+current,0)            
+            <br/>
+            <br/>
+            console.log(sum) // o/p:6</i>  
+        </p>
+
+        <p><strong>Woww!,</strong>You completed the most important methods of array. Use it in yor future projects.</p>
+
+    
+        
+    </article>
+
+
+    <footer class="footer">
+        <div class="footer-header">socia media presence</div>
+        <ul class="socia-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/prasadvinnakota">github</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/Prasadvinnakot2">twitter</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/venkateswara-prasad-vinnakota-a5106b1a8/">linkedln</a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
